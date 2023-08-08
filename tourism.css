@@ -1,0 +1,417 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px red solid; */
+    font-family: cursive;
+}
+html,body{
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* font-family: 'Cedarville Cursive' */
+
+header {
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    /* overflow: auto; */
+}
+
+header::before {
+    content: "";
+    background-image: url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/poveda6u7yb/front-m7VoJwB28ZFLB9VQ.png');
+    background-position: bottom;
+    background-size: cover;
+
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: block;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    opacity: 1;
+}
+
+.mainheader::before {
+    content: "";
+    background: url('https://imagetolink.com/ib/xo6vNu40Bs.png') no-repeat center center/cover;
+    display: block;
+    height: 100px;
+    position: relative;
+    top: 60px;
+    left: 500px;
+    transform: translateX(160%);
+    display: none;
+}
+
+#quote {
+    position: fixed;
+    right: 0px;
+    display: block;
+    /* border: 2px red solid; */
+    text-align: right;
+    font-weight: bolder;
+    font-family: 'Square Peg', cursive;
+    letter-spacing: 2px;
+    font-size: 3vmin;
+    padding-right: 100px;
+}
+
+a {
+    text-decoration: none;
+
+}
+.active{
+    background-color: rgb(11 27 16);
+    color: rgb(199, 206, 201);
+    border-radius: 3px;
+    padding: 3px 10px ;
+}
+
+.nav-links{
+    display: flex;
+    /* border: 2px red solid; */
+    width: 900px;
+    justify-content: space-around;
+    position: relative;
+    /* right: 0; */
+    left: 90%;
+    transform: translateX(-50%);
+}
+.mainheader {
+    display: flex;
+    /* grid-template-columns: repeat(7, 180px); */
+    /* grid-gap: 40px; */
+    justify-content: flex-end;
+    /* border: 2px red solid; */
+    position: relative;
+  
+}
+
+.item {
+    margin-top: 60px;
+    /* border: 2px red solid; */
+    height: 100px;
+}
+
+#item-1 a {
+    font-size: 50px;
+    color: whitesmoke;
+    position: absolute;
+    top: 50px;
+}
+#item-1 h1 {
+    font-family: 'Barrio', cursive;
+    color: rgb(255, 255, 244 ,0.5);
+    position: fixed;
+
+}
+
+.item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.item a {
+    color: rgb(11 27 16);
+    /* border: 2px red solid; */
+    padding: 5px 10px;
+    display: block;
+}
+
+header a::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: darkolivegreen;
+}
+
+
+.item:not(:first-child) {
+
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header .item:not(:nth-child(-n+2)):hover a {
+    background-color: rgb(11 27 16);
+    color: rgb(199, 206, 201);
+    border-radius: 3px;
+}
+
+#item-0 {
+    visibility: hidden;
+}
+
+#services {
+    background-color: transparent;
+    border: none;
+    color: rgb(11 27 16);
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+#item-4 :hover select,
+option {
+    text-transform: uppercase;
+    background-color: rgb(11 27 16);
+    color: rgb(199, 206, 201);
+    border-radius: 3px;
+}
+
+.primary-section {
+    position: absolute;
+    top: 50%;
+    background-color: rgb(199, 206, 201, 0.68);
+    margin: 30px;
+    padding: 50px;
+    height: 320px;
+    text-align: justify;
+}
+
+.description {
+    margin-top: 30px;
+    text-indent: 5rem;
+}
+
+.container {
+    /* border: 2px red solid; */
+    position: absolute;
+    top: 72%;
+    transform: translateY(10%);
+}
+
+/* primary box for biodoiversity hotspot */
+
+.primary-box h3 {
+    text-align: center;
+    font-family: 'Square Peg', cursive;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+.primary-box p {
+    padding: 50px 0px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.primary-box {
+    /* border: 2px red solid; */
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    margin: 20px;
+    padding: 0px 30px;
+    background-color: rgb(11 27 16);
+    color: rgb(199, 206, 201);
+    position: relative;
+    height: 650px;
+}
+
+#box-1 {
+    padding: 50px 50px;
+}
+
+#box-1-img img {
+    height: 350px;
+    margin-top: 150px;
+}
+
+/* secondary box for natural splendor*/
+
+.secondary-box h3 {
+    text-align: center;
+    font-family: 'Square Peg', cursive;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+.secondary-box p {
+    padding: 30px 0px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.secondary-box {
+    /* border: 2px red solid; */
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    margin: 0px 20px;
+    margin-top: -20px;
+    padding-bottom: 40px;
+    padding: 0px 30px;
+    padding-top: 30px;
+    background-color: rgb(199, 206, 201);
+    color: rgb(11 27 16);
+    position: relative;
+}
+
+
+#box-2 {
+    padding: 20px 50px;
+}
+
+#box-2-img img {
+    height: 400px;
+    margin-top: 70px;
+}
+
+/* tertiary box for Wild life*/
+
+.tertiary-box h3 {
+    text-align: center;
+    font-family: 'Square Peg', cursive;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+.tertiary-box p {
+    padding: 30px 0px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.tertiary-box {
+    /* border: 2px red solid; */
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    margin: 0px 20px;
+    margin-top: -20px;
+    padding: 0px 30px;
+    padding-top: 0px;
+    background-color: rgb(11 27 16);
+    color: rgb(199, 206, 201);
+    position: relative;
+}
+
+
+#box-3 {
+    padding: 20px 50px;
+    margin-top: 100px;
+}
+
+#box-3-img img {
+    height: 600px;
+    margin-top: 0px;
+}
+
+footer {
+    /* border: 2px red solid; */
+    margin-top: 50px;
+    height: 600px;
+    background-color: rgb(199, 206, 201, 0.7);
+}
+
+.secondary-footer {
+    padding: 50px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
+}
+.secondary-footer h2{
+    font-family: 'Barrio', cursive;
+    color: black
+
+}
+
+.secondary-footer p{
+    margin-top: 50px;
+    font-family: 'Square Peg', cursive;
+    font-size: larger;
+    text-indent: 100px;
+    font-weight: bold;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.primary-footer {
+    display: grid;
+    grid-template-columns: 5fr 2fr 5fr;
+
+}
+
+.col {
+    /* border: 2px red solid; */
+    height: 250px;
+
+}
+
+#col-1 img {
+    height: 250px;
+    /* padding-left: 100px; */
+    display: block;
+    width: auto;
+    margin: auto;
+}
+
+
+#col-2 {
+    display: flex;
+    flex-direction: column;
+    /* height: 20px; */
+    align-items: center;
+    justify-content: center
+}
+
+#col-2 input {
+
+    height: 30px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-indent: 30px;
+}
+
+#col-2 button {
+
+    height: 30px;
+    width: 70px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+#col-0 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#col-0 li {
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+#col-0 li a {
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-align: left;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    color: rgb(11 27 16);
+    text-transform: uppercase;
+}
+
+#col-0 li a:hover {
+    background-color: rgb(11 27 16);
+    color: rgb(199, 206, 201);
+    border-radius: 20px;
+}
